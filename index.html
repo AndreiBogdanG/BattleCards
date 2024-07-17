@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BattleCards</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <audio id="myAudio">
+        <source src="Sounds/deal.wav" type="audio/wav">
+      </audio>
+<header>
+    <div class="gameTitle">
+    <h1>Battle Cards</h1>
+    <p id="version">version 1.05 </p>
+    </div>
+</header>    
+<main>
+    <div class="mainDiv">
+   <div id="div1">
+    <p id="cards1"></p>
+<img class="mainCard" id="backCard1"  src="Images/bkgb.png" alt="First Player's Deck"  onclick="changeCard1()">
+
+<!-- <div class="emptySlots"> -->
+<img id="Card1"  src="Images/empty.png" alt="First Player's Card">
+<div class="battleButton">
+<button id="sBattle"  onclick="startBattle()">Start Battle!</button>
+</div>
+<!-- </div> -->
+<img class="mainCard" id="backCard2"  src="Images/bkgr.png" alt="Second Player's Deck"  onclick="changeCard2()">
+<img id="Card2"  src="Images/empty.png" alt="Second Player's Card">
+<p id="cards2"></p>
+   </div>
+   
+</div>
+
+<p id="testP"></p>
+<button id="newGameBtn" onclick="splitDeck()">Start New Game</button>
+<button id="helpBtn" onclick="help()">Help</button>
+</main>
+<footer></footer>
+<script src="script.js"></script>
+</body>
+</html>
